@@ -1,5 +1,6 @@
 package com.oocl.cultivation;
 
+import java.nio.DoubleBuffer;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,7 +11,9 @@ public class ParkingLot {
     public ParkingLot() {
         this(10);
     }
-
+    public Map<ParkingTicket,Car> getCars(){
+        return cars;
+    }
     public ParkingLot(int capacity) {
         this.capacity = capacity;
     }
